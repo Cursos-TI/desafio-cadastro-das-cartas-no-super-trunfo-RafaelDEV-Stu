@@ -1,22 +1,77 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
-    
-    // Cadastro das Cartas:
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    // Exibição dos Dados das Cartas:
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+char EstadoI , EstadoII;
+char CidI[18] ,CidII[18];
+char CardCodeI[4],CardCodeII[4];
+float PIBI, PIBII;
+float AreaI, AreaII;
+int  PopI , PopII; 
+int TurPonI ,TurPonII;
 
-    return 0;
+printf ("SUPER TRUNFO CADASTRO version 0.01\n");
+
+printf ("Digite o estado 1:\n");
+scanf (" %c", &EstadoI);
+printf ("Digite o estado 2:\n");
+scanf (" %c", &EstadoII);
+
+printf ("Digite a cidade 1:\n");
+scanf ("%s", &CidI);
+printf ("Digite a cidade 2:\n");
+scanf ("%s", &CidII);
+
+
+printf ("Digite o codigo da cidade 1:\n");
+scanf ("%s", &CardCodeI);
+printf ("Digite o codigo da cidade 2:\n");
+scanf ("%s", &CardCodeII);
+
+printf ("Digite o PIB da cidade 1 (5 primeiros digitos com ponto):\n");
+scanf ("%f", &PIBI);
+printf ("Digite o PIB da cidade 2 (5 primeiros digitos com ponto):\n");
+scanf ("%f", &PIBII);
+
+
+printf ("Digite a area da cidade 1 em km2:\n");
+scanf ("%f", &AreaI);
+printf ("Digite a area da cidade 2 km2:\n");
+scanf ("%f", &AreaII);
+
+
+printf ("Digite a população da cidade 1:\n");
+scanf ("%d", &PopI);
+printf ("Digite a população da cidade 2:\n");
+scanf ("%d", &PopII);
+
+printf ("Digite a quantidade de pontos turisticos da cidade 1:\n");
+scanf ("%d", &TurPonI);
+printf ("Digite a quantidade de pontos turisticos da cidade 2:\n");
+scanf ("%d", &TurPonII);
+
+
+printf ("\nCarta 1\n\n\n");
+printf ("Estado:%c\n\n" , EstadoI);
+printf ("Cidade:%s\n\n" , CidI);
+printf ("Codigo:%s\n\n" , CardCodeI);
+printf ("PIB(em mi):%.2f\n\n" , PIBI);
+printf ("Area(em km2):%.2f\n\n" , AreaI);
+printf ("População:%d\n\n" , PopI);
+printf ("Pontos Turisticos:%d\n\n\n" , TurPonI);
+
+printf ("Carta 2\n\n\n");
+printf ("Estado:%c\n\n" , EstadoII);
+printf ("Cidade:%s\n\n" , CidII);
+printf ("Codigo:%s\n\n" , CardCodeII);
+printf ("PIB (em mi):%.2f\n\n" , PIBII);
+printf ("Area (em km2):%.2f\n\n" , AreaII);
+printf ("População:%d\n\n" , PopII);
+printf ("Pontos Turisticos:%d\n\n" , TurPonII);
+
+printf ("Cadastro Finalizado ! \n\n");
+
+return 0;
+
+
 }
